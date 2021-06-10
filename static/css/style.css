@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+.container{
+    display: inline-block;
+    box-shadow: 0em 0em 0em .5em rgb(38, 38, 38), 0em 0em 0em .75em rgb(226, 226, 226), 0em 0em 0em 1.25em rgb(38, 38, 38), 0em 0em 0em 2.5em rgb(91, 32, 0);
+}
+.row{
+    display: flex;
+    height: 4em;
+    width: 100%;
+}
+.square{
+    width: 4em;
+    height: 4em;
+    background-color: rgb(38, 38, 38);
+}
+.row:nth-of-type(odd)>.square:nth-of-type(even){
+    background-color: blanchedalmond;
+}
+.row:nth-of-type(even)>.square:nth-of-type(odd){
+    background-color: blanchedalmond;
+}
