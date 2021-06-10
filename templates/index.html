@@ -11,7 +11,7 @@
     <div class="container">
         {% for x in range(0,height|default(8, true)): %}
             <div class="row">
-                {% for x in range(0,width|default(8, true)): %}
+                {% for y in range(0,width|default(8, true)): %}
                     <div class="square"></div>
                 {% endfor %}
             </div>
